@@ -1,0 +1,127 @@
+<!-- Start Header/Navigation -->
+<nav class="custom-navbar navbar navbar navbar-expand-md   bg-white" arial-label="furniro navigation bar">
+
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="../../../assets/images/logo.png"
+                alt="furniro logo"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsfurniro"
+            aria-controls="navbarsfurniro" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsfurniro">
+            <ul class="custom-navbar-nav navbar-nav mx-auto mb-2 mb-md-0">
+                <li class="nav-item ">
+                    <a class="nav-link" routerLink="/app-home" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Home</a>
+                </li>
+                <li><a class="nav-link" routerLink="/app-shop" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Shop</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+
+            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                <li><a class="nav-link" href="#"><img src="../../../assets/icons/mdi_account-alert-outline.svg"></a>
+                </li>
+                <li><a class="nav-link" href="#"><img src="../../../assets/icons/icons_search.svg"></a></li>
+
+                <li><a class="nav-link heart-icon" href="#"><img src="../../../assets/icons/heart.svg"></a></li>
+                <li><a class="nav-link position-relative" href="#exampleModal" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"><img src="../../../assets/icons/cart.svg">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                        </span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+<!-- End Header/Navigation -->
+<div class="modal fade cart-popup" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="me-0 modal-dialog modal-dialog-scrollable mt-0">
+        <div class="modal-content px-4 rounded-0 vh-100">
+            <div class="modal-header border-0 px-0 border-light justify-content-between">
+                <h3 class="border-bottom border-secondary border-opacity-50 fw-medium modal-title w-75 pb-4"
+                    id="staticBackdropLabel">
+                    Shopping Cart</h3>
+                <button type="button" class="btn text-secondary" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-bag-x"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="align-items-center gx-3 gy-2 justify-content-lg-between row cart-items">
+
+                    <div class="col-12  mb-3">
+                        <div class="card ">
+                            <div class="row      align-content-center align-items-center">
+                                <div class="col-auto">
+                                    <img src="../../../assets/images/sof1.png" class="img-fluid rounded-4" alt="thumb">
+                                </div>
+                                <div class="col">
+                                    <div class="card-body  ">
+                                        <h6 class="card-title  mb-2">High Quality</h6>
+                                        <p class="card-text text-secondary mb-0">1 &times; <span
+                                                class="text-primary fw-semibold mx-1">170000.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn text-secondary p-0">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  mb-3">
+                        <div class="card ">
+                            <div class="row  align-content-center align-items-center">
+                                <div class="col-auto">
+                                    <img src="../../../assets/images/sofa2.png" class="img-fluid rounded-4" alt="thumb">
+                                </div>
+                                <div class="col">
+                                    <div class="card-body  ">
+                                        <h6 class="card-title  mb-2">High Quality</h6>
+                                        <p class="card-text text-secondary mb-0">1 &times; <span
+                                                class="text-primary fw-semibold mx-1">100000.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn text-secondary p-0">
+                                        <i class="bi bi-x-circle-fill"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center border-0">
+                <div
+                    class="align-items-center  py-3 justify-content-lg-between row border-bottom border-secondary border-opacity-50 w-100">
+                    <div class="col-12  ">
+                        <div class="card ">
+                            <div class="row gx-5 align-content-center align-items-center">
+
+                                <div class="col-5">
+                                    <p class="card-text  mb-0">Subtotal</p>
+
+                                </div>
+                                <div class="col-7">
+                                    <p class="card-text text-primary fw-bold mb-0">Rs. 270000.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <button type="button" class="btn btn-outline-dark rounded-pill px-4">Cart</button>
+                <button type="button" class="btn btn-outline-dark rounded-pill px-4">Checkout</button>
+                <button type="button" class="btn btn-outline-dark rounded-pill px-4">Comparison</button>
+
+            </div>
+        </div>
+    </div>
+</div>

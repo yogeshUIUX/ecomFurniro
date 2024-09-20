@@ -1,0 +1,35 @@
+:root {
+    --primary: #B88E2F;
+    --green-accent: #2EC1AC;
+    --red-accent: #E97171;
+    --light-primary: #FFF3E3;
+    --dark: #333333;
+    --light: #F4F5F7;
+    --secondary: #898989;
+}
+
+$primary: #B88E2F;
+$green-accent: #2EC1AC;
+$red-accent: #E97171;
+$dark: #333333;
+$light: #F4F5F7;
+$secondary: #898989;
+$light-primary: #FFF3E3;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "green-accent": $green-accent,
+    "red-accent": $red-accent,
+    "light": $light,
+    "dark": $dark,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger
+);
