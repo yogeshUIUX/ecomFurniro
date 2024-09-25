@@ -1,5 +1,5 @@
 import { Component, inject, Input } from '@angular/core';
-import { products } from '../../product.json'
+import { products } from '../product.json'
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 

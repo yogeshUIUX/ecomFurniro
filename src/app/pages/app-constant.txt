@@ -1,0 +1,10 @@
+NAMECONSTANT = [
+    HEROTITLE:"New Arrival",
+    HEROHEADING:"Discover Our",
+    HERODESCRIPTION:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utelit tellus, luctus nec ullamcorper mattis.",
+    HEROBUTTON:"BUY NOW",
+]
+URLCONSTANT = [
+    HEROHEADING:"New Arrival",
+
+]
