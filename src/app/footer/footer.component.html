@@ -1,0 +1,79 @@
+<!-- Start Footer Section -->
+<footer class="footer-section mt-5">
+    <div class="container-fluid">
+
+        <div class="row g-5 mb-5">
+            <div class="col-lg-12">
+                <div class="row links-wrap">
+                    <div class="col-lg-4">
+                        <div class="mb-5 footer-logo-wrap"><a href="#"
+                                class="footer-logo fw-bold font-1_4rem">{{iProjectVariables.brandName}}<span>.</span></a>
+                        </div>
+                        <p class="mb-4 text-secondary">{{iProjectVariables.footerAddressLineOne}} <br>
+                            {{iProjectVariables.footerAddressLineTwo}},<br>
+                            {{iProjectVariables.footerAddressLineThree}}</p>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-2">
+                        <div class="mb-5 footer-logo-wrap text-secondary">{{iProjectVariables.links}}</div>
+                        <ul class="list-unstyled">
+                            <li *ngFor="let item of footerlinks"><a routerLink="{{item.link}}" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}"
+                                    ariaCurrentWhenActive="page">{{item.label}}</a></li>
+                            <!-- <li><a routerLink="/app-shop" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Shop</a></li>
+                            <li><a routerLink="/app-about" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">About</a>
+                            </li>
+                            <li><a routerLink="/app-contact" routerLinkActive="active"
+                                    [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Contact</a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-md-6 col-lg-2">
+                        <div class="mb-5 footer-logo-wrap text-secondary">{{iProjectVariables.help}}</div>
+                        <ul class="list-unstyled">
+                            <li *ngFor="let item of footerHelplinks">
+                                <a [href]=" item.link ? item.link : 'javasscipt:void(0)'">
+                                    {{item.label}}</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="  col-lg-4">
+                        <div class="mb-5 footer-logo-wrap text-secondary">{{iProjectVariables.newsLetter}}</div>
+                        <form (ngSubmit)="onSubmit()" #subscribeForm="ngForm" class="row g-3">
+
+                            <div class="col-auto">
+                                <input type="email" name="email" [(ngModel)]="email" required email
+                                    class="form-control border-0 border-bottom border-dark rounded-0"
+                                    placeholder="Enter Your Email Address">
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" [disabled]="!subscribeForm.valid"
+                                    class="btn border-bottom border-dark border-0 rounded-0 text-dark fw-semibold">
+                                    {{iProjectVariables.subscribe}}
+                                </button>
+                            </div>
+                        </form>
+                        <div *ngIf="successMessage" class="alert alert-success mt-3">
+                            {{ successMessage }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-top copyright">
+            <div class="row py-4">
+                <div class="col-lg-12">
+                    <p class="me-4">{{iProjectVariables.copyright}}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- End Footer Section -->

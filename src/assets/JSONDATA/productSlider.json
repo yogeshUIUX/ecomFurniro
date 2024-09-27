@@ -1,0 +1,88 @@
+{
+  "productSlider": [
+    {
+      "id": 1,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 2,
+      "title": "Dining",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 3,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 4,
+      "title": "Dining",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 5,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 6,
+      "title": "Dining",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 7,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 8,
+      "title": "Dining",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 9,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 10,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 11,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    },
+    {
+      "id": 12,
+      "title": "Bedroom",
+      "subTitle": "Inner Peace",
+      "url": "",
+      "thumbnail": "../../../assets/images/Rectangle 24.png"
+    }
+  ]
+}

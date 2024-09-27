@@ -150,7 +150,8 @@ a {
         }
     }
 
-    .custom-navbar-nav {
+    .custom-navbar-nav,
+    .custom-navbar-cta {
         li {
             @media (min-width: $lg) {
                 margin-left: 15px;
@@ -323,6 +324,7 @@ a {
         position: relative;
         cursor: pointer;
         overflow: hidden;
+        height: 100%;
 
         .product-thumbnail {
             position: relative;
@@ -552,14 +554,18 @@ a {
 }
 
 .cart-popup {
+    background-color: rgba($dark, .5);
+
     .cart-items {
         .card {
             .img-fluid {
                 width: 104px;
                 height: 104px;
             }
+
+            .qty-input {
+                width: 65px;
+            }
         }
     }
 }
-
-.notification-badge {}

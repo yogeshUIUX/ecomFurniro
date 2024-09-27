@@ -1,0 +1,119 @@
+<!-- Start Product Section -->
+
+<div class="row mt-5  g-4">
+    <!-- <ng-template NgFor="let item of productList"> -->
+    <div class="col-md-3" *ngFor="let item of productList">
+        <div class="card bg-light product-item rounded-0">
+            <span *ngIf="item.isDisount && !item.isNewProcuct" class="badge red">20%</span>
+            <span *ngIf="item.isNewProcuct && !item.isDisount" class="badge green">New</span>
+            <img src="{{item.thumbnail}}" class="card-img-top rounded-0 product-thumbnail" alt="Dining">
+            <div class="card-body pb-4 position-relative">
+                <div class="text-warning text-end font-0_9rem position-absolute end-0 me-3">
+                    <i [class]="item.rating > 0? 'bi bi-star-fill me-1':'bi bi-star me-1'"></i>
+                    <i [class]="item.rating > 1? 'bi bi-star-fill me-1':'bi bi-star me-1'"></i>
+                    <i [class]="item.rating > 2? 'bi bi-star-fill me-1':'bi bi-star me-1'"></i>
+                    <i [class]="item.rating > 3? 'bi bi-star-fill me-1':'bi bi-star me-1'"></i>
+                    <i [class]="item.rating > 4? 'bi bi-star-fill me-1':'bi bi-star me-1'"></i>
+                </div>
+                <h4 class="card-title fw-semibold pt-4 pb-2">{{item.title}}</h4>
+                <p class="text-secondary">{{item.description}}</p>
+                <div class="row mb-1 g-0">
+                    <!-- <span class="col fw-semibold font-1_2rem">{{item.currency}} {{item.mrp |
+                        number:'1.2-2'}}</span> -->
+                    <span class="col fw-semibold font-1_2rem">{{item.currency}} {{(item.mrp * (100 -
+                        item.discountPercentage) /
+                        100).toFixed(2)}}</span>
+                    <span *ngIf="item.isDisount && !item.isNewProcuct"
+                        class="col-auto text-end text-secondary text-decoration-line-through">{{item.currency}}
+                        {{item.mrp | number:'1.2-2'}}</span>
+                </div>
+            </div>
+            <div
+                class="cta-overlays g-0  row justify-content-center align-items-center align-content-center  text-center">
+                <div class="col-8">
+                    <button class="bg-white btn btn-block rounded-0 text-primary w-100" (click)="addToCart(item)">Add
+                        to cart</button>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <button class="btn "><i class="bi bi-share-fill me-1"></i>Share</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn"><i class="bi bi-arrow-left-right me-1"></i>Compare</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn"><i class="bi bi-heart me-1"></i>Like</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </ng-template> -->
+    <!-- <div class="col-md-3">
+                <div class="card bg-light product-item rounded-0">
+                    <span class="badge red">20%</span>
+                    <span class="badge green">New</span>
+                    <img src="../../../assets/images/products/Images.png"
+                        class="card-img-top rounded-0 product-thumbnail" alt="Dining">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title fw-semibold pt-3 pb-2">Syltherine</h4>
+                        <p class="text-secondary">Stylish cafe chair</p>
+                        <div class="row mb-1 g-0">
+                            <span class="col fw-semibold font-1_2rem">Rp 2.500.000</span>
+                            <span class="col text-end text-secondary text-decoration-line-through">Rp 2.500.000</span>
+                        </div>
+                    </div>
+                    <div
+                        class="cta-overlays g-0  row justify-content-center align-items-center align-content-center  text-center">
+                        <div class="col-8">
+                            <button class="bg-white btn btn-block rounded-0 text-primary w-100">Add to cart</button>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-4">
+                            <button class="btn "><i class="bi bi-share-fill me-1"></i>Share</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn"><i class="bi bi-arrow-left-right me-1"></i>Compare</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="btn"><i class="bi bi-heart me-1"></i>Like</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    <!-- <div class="col-md-3">
+        <div class="card bg-light product-item rounded-0">
+            <span class="badge red">20%</span>
+            <span class="badge green">New</span>
+            <img src="../../../assets/images/products/Images.png" class="card-img-top rounded-0 product-thumbnail"
+                alt="Dining">
+            <div class="card-body pb-4">
+                <h4 class="card-title fw-semibold pt-3 pb-2">Syltherine</h4>
+                <p class="text-secondary">Stylish cafe chair</p>
+                <div class="row mb-1 g-0">
+                    <span class="col fw-semibold font-1_2rem">Rp 2.500.000</span>
+                    <span class="col text-end text-secondary text-decoration-line-through">Rp 2.500.000</span>
+                </div>
+            </div>
+            <div
+                class="cta-overlays g-0  row justify-content-center align-items-center align-content-center  text-center">
+                <div class="col-8">
+                    <button class="bg-white btn btn-block rounded-0 text-primary w-100" (click)="addToCart(product)">Add to cart</button>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-4">
+                    <button class="btn "><i class="bi bi-share-fill me-1"></i>Share</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn"><i class="bi bi-arrow-left-right me-1"></i>Compare</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn"><i class="bi bi-heart me-1"></i>Like</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+</div>
+
+<!-- End Product Section -->

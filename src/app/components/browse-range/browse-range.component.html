@@ -1,0 +1,10 @@
+<div class="row justify-content-center mt-5  g-4">
+    <div class="col-md-4" *ngFor="let item of browseProducts">
+        <a class="card" [href]=" item.url ? item.url : 'javasscipt:void(0)'">
+            <img src="{{item.thumbnail}}" class="card-img-top rounded-4" alt="{{item.title}}">
+            <div class="card-body">
+                <h4 class="card-title fw-semibold py-3">{{item.title}}</h4>
+            </div>
+        </a>
+    </div>
+</div>

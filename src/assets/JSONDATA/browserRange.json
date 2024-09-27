@@ -1,0 +1,22 @@
+{
+  "browseProducts": [
+    {
+      "id": 1,
+      "title": "Dining",
+      "url": "",
+      "thumbnail": "../../../assets/images/Image-dining room.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Living",
+      "url": "",
+      "thumbnail": "../../../assets/images/Image-living room.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Bedroom",
+      "url": "",
+      "thumbnail": "../../../assets/images/Image-bedroom.jpg"
+    }
+  ]
+}

@@ -1,66 +1,19 @@
-<app-header></app-header>
 <!-- Start Hero Section -->
-<div class="hero banner">
-    <div class="row g-0 align-items-center h-100">
-        <div class="col-auto offset-lg-6 ">
-            <div class="banner-content rounded-4  ">
-                <p class="text-dark">New Arrival</p>
-                <h1>Discover Our <br>New Collection</h1>
-                <p class="mb-4 text-dark mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                    elit
-                    tellus,
-                    luctus nec ullamcorper mattis.</p>
-                <p class="mb-0"><a href="#"
-                        class="btn btn-primary text-white px-5 py-4 fw-semibold text-uppercare rounded-0">BUY
-                        NOW</a></p>
-            </div>
-        </div>
-
-    </div>
-</div>
+<app-hero></app-hero>
 <!-- End Hero Section -->
-<!-- Start Hero Section -->
+<!-- Start RANGE  Section -->
 <div class=" browse-range py-5">
     <div class="container-lg text-center py-5">
-        <h3 class="fw-bold ">Browse The Range</h3>
-        <p class="text-secondary mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <div class="row justify-content-center mt-5  g-4">
-            <div class="col-md-4">
-                <a class="card" href="#">
-                    <img src="../../../assets/images/Image-dining room.jpg" class="card-img-top rounded-4" alt="Dining">
-                    <div class="card-body">
-                        <h4 class="card-title fw-semibold py-3">Dining</h4>
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a class="card" href="#">
-                    <img src="../../../assets/images/Image-living room.jpg" class="card-img-top rounded-4" alt="Living">
-                    <div class="card-body">
-                        <h4 class="card-title fw-semibold py-3">Living</h4>
-
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4">
-                <a class="card" href="#">
-                    <img src="../../../assets/images/Image-bedroom.jpg" class="card-img-top rounded-4" alt="Bedroom">
-                    <div class="card-body">
-                        <h4 class="card-title fw-semibold py-3">Bedroom</h4>
-
-                    </div>
-                </a>
-            </div>
-
-        </div>
+        <h3 class="fw-bold ">{{iProjectVariables.browseRangeText}}</h3>
+        <p class="text-secondary mb-5">{{iProjectVariables.browseRangeCardDescription}}</p>
+        <app-browse-range></app-browse-range>
     </div>
 </div>
 <!-- End Hero Section -->
 <div class="product-section py-5">
     <div class="container-lg ">
-        <h2 class="fw-bold text-center my-5 font-2_5rem">Our Products</h2>
-        <app-products [numberOfRecords]="7"></app-products>
+        <h2 class="fw-bold text-center my-5 font-2_5rem">{{iProjectVariables.ourProductTitle}}</h2>
+        <app-products [numberOfRecords]="8"></app-products>
 
     </div>
 </div>
@@ -69,71 +22,17 @@
         <div class="row g-0 align-items-center h-100">
             <div class="col-md-4 offset-md-1">
                 <div class="slider-content rounded-4  ">
-                    <h2 class="fw-bold">50+ Beautiful rooms<br> inspiration</h2>
-                    <p class="mb-4 text-dark mb-4">Our designer already made a lot of beautiful prototipe of rooms that
-                        inspire you</p>
+                    <h2 class="fw-bold">{{iProjectVariables.productSliderHeading}}<br>
+                        {{iProjectVariables.productSliderHeadingTwo}}</h2>
+                    <p class="mb-4 text-dark mb-4">{{iProjectVariables.productSliderDescription}}</p>
                     <p class="mb-0 w-75"><a href="#"
-                            class="btn btn-primary text-white px-5 py-4 fw-semibold text-uppercare rounded-0">Explore
-                            More</a></p>
+                            class="btn btn-primary text-white px-5 py-4 fw-semibold text-uppercare rounded-0">{{iProjectVariables.productSliderButton}}</a>
+                    </p>
                 </div>
             </div>
             <div class="col-md-7 rooms-swipper-div">
-                <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true"
-                    space-between="50" slides-per-view="2.1">
-                    <swiper-slide>
-                        <div class="room-img">
-                            <img src="../../../assets/images/Rectangle 24.png" alt="rooms">
-                            <div class="row slider-text g-0 h-100 align-items-end">
-                                <div class="col-7 offset-1 slide-title text-dark p-3">
-                                    <p class="fw-light">01 &mdash; Bedroom</p>
-                                    <p class="fw-bold font-1_4rem">Inner Peace</p>
-                                </div>
-                                <div class="col-auto slide-arrow"><button class="btn btn-primary rounded-0 btn-lg"><i
-                                            class="bi bi-arrow-right"></i></button></div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="room-img">
-                            <img src="../../../assets/images/Rectangle 24.png" alt="rooms">
-                            <div class="row slider-text g-0 h-100 align-items-end">
-                                <div class="col-7 offset-1 slide-title text-dark p-3">
-                                    <p class="fw-light">02 &mdash; Dining</p>
-                                    <p class="fw-bold font-1_4rem">Inner Peace</p>
-                                </div>
-                                <div class="col-auto slide-arrow"><button class="btn btn-primary rounded-0 btn-lg"><i
-                                            class="bi bi-arrow-right"></i></button></div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="room-img">
-                            <img src="../../../assets/images/Rectangle 24.png" alt="rooms">
-                            <div class="row slider-text g-0 h-100 align-items-end">
-                                <div class="col-7 offset-1 slide-title text-dark p-3">
-                                    <p class="fw-light">03 &mdash; Bedroom</p>
-                                    <p class="fw-bold font-1_4rem">Inner Peace</p>
-                                </div>
-                                <div class="col-auto slide-arrow"><button class="btn btn-primary rounded-0 btn-lg"><i
-                                            class="bi bi-arrow-right"></i></button></div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="room-img">
-                            <img src="../../../assets/images/Rectangle 24.png" alt="rooms">
-                            <div class="row slider-text g-0 h-100 align-items-end">
-                                <div class="col-7 offset-1 slide-title text-dark p-3">
-                                    <p class="fw-light">04 &mdash; Bedroom</p>
-                                    <p class="fw-bold font-1_4rem">Inner Peace</p>
-                                </div>
-                                <div class="col-auto slide-arrow"><button class="btn btn-primary rounded-0 btn-lg"><i
-                                            class="bi bi-arrow-right"></i></button></div>
-                            </div>
-                        </div>
-                    </swiper-slide>
-
-                </swiper-container>
+                <app-product-slider [pagination]="true" [navigation]="true" [spaceBetween]="30"
+                    [slidesPerView]="2.1"></app-product-slider>
             </div>
         </div>
     </div>
@@ -142,53 +41,9 @@
 
 <div class=" gallary py-5">
     <div class="container-fluid p-0">
-        <p class="text-secondary mb-2 text-center">Share your setup with</p>
-        <h3 class="fw-bold -2 text-center">#FuniroFurniture</h3>
+        <p class="text-secondary mb-2 text-center">{{iProjectVariables.gallarytext}}</p>
+        <h3 class="fw-bold -2 text-center">#{{iProjectVariables.gallaryHeading}}</h3>
 
-        <div class="row justify-content-center  img-row  g-3 flex-md-nowrap  align-items-center">
-            <div class="col-md-5">
-                <div class="row g-3   align-items-end">
-                    <div class="col-3"> <img src="../../../assets/images/Rectangle36.png" class="gallary-img"
-                            alt="tile"></div>
-                    <div class="col-9"><img src="../../../assets/images/Rectangle38.png" class="gallary-img" alt="tile">
-                    </div>
-                </div>
-
-                <div class="row g-3  ">
-                    <div class="col-5"><img src="../../../assets/images/Rectangle37.png" class="gallary-img" alt="tile">
-                    </div>
-                    <div class="col-7"><img src="../../../assets/images/Rectangle39.png" class="gallary-img" alt="tile">
-                    </div>
-                </div>
-
-
-
-            </div>
-            <div class="col-md-2 ">
-                <img src="../../../assets/images/Rectangle40.png" class="gallary-img" alt="tile">
-
-            </div>
-            <div class="col-md-5">
-                <div class="row g-3  align-items-end">
-                    <div class="col-7"><img src="../../../assets/images/Rectangle43.png" class="gallary-img" alt="tile">
-                    </div>
-                    <div class="col-5"><img src="../../../assets/images/Rectangle45.png" class="gallary-img" alt="tile">
-                    </div>
-                </div>
-
-                <div class="row g-3">
-                    <div class="col-5"><img src="../../../assets/images/Rectangle41.png" class="gallary-img" alt="tile">
-                    </div>
-                    <div class="col-5"><img src="../../../assets/images/Rectangle44.png" class="gallary-img" alt="tile">
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
+        <app-tile-gallary></app-tile-gallary>
     </div>
 </div>
-<app-footer></app-footer>
