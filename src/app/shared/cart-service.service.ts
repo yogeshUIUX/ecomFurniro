@@ -16,7 +16,7 @@ export class CartServiceService {
     if (!currentCart.some(x => x.id === item.id)) {
       currentCart.push(item);
       this.cart.next(currentCart);  // Update cart
-      console.log('Cart updated:', this.cart.value);  // Debugging log
+      //console.log('Cart updated:', this.cart.value);   
       localStorage.setItem('cart', JSON.stringify(item));
     } else {
       alert(`${item.title} Already added to cart!`);

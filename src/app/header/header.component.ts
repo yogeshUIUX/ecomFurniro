@@ -40,7 +40,7 @@ export class HeaderComponent {
   ngOnInit(): void {
     this.cartService.cartItems.subscribe(items => {
       this.cartItems = items; // Subscribe to cart items
-      console.log(this.cartItems);
+    //  console.log(this.cartItems);
     });
   }
 
@@ -58,7 +58,7 @@ export class HeaderComponent {
   }
   removeItem(item: any, index: number) {
     this.cartItems.splice(index, 1);
-    alert(`${item.title} removed from cart!`);
+    // alert(`${item.title} removed from cart!`);
   }
 
   calculateSubTotal() {
