@@ -1,0 +1,73 @@
+<div class="row g-0 align-items-center justify-content-end">
+    <div class="col">
+        <ul class="nav filter-nav">
+            <li class="nav-item dropdown">
+                <button class="btn font-1_2rem" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-sliders me-2 text-dark"></i>{{iProjectVariables.filterText}}
+                </button>
+                <ul class="dropdown-menu dropdown-menu">
+                    <li>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="Filter1" value="option1">
+                            <label class="form-check-label" for="Filter1"> {{iProjectVariables.filterText}} 1</label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="Filter3" value="option1">
+                            <label class="form-check-label" for="Filter3">{{iProjectVariables.filterText}} 2</label>
+                        </div>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <button class="btn fw-semibold" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Grid view">
+                    <img src="../../../assets/icons/ci_grid-big-round.svg" alt="grid">
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn fw-semibold" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="List view">
+                    <img src="../../../assets/icons/bi_view-list.svg" alt="list">
+                </button>
+            </li>
+            <li class="nav-item virtical-devider">
+                <span class="text-secondary font-2rem mx-4 fw-light">|</span>
+            </li>
+            <li class="nav-item virtical-devider">
+                <span> {{iProjectVariables.showingtText}} 1-16 {{iProjectVariables.ofText}} 32
+                    {{iProjectVariables.resultText}}</span>
+            </li>
+
+        </ul>
+    </div>
+    <div class="col-auto font-1_2rem">
+        <div class="row gy-2 gx-3 align-items-center justify-content-end">
+            <div class="col-auto  ">
+                <label class="col-form-label col-form-label-sm ">{{iProjectVariables.showText}}</label>
+
+            </div>
+            <div class="col-2 ">
+                <input type="text" class="form-control py-3 text-center border-0 rounded-0" placeholder="16"
+                    aria-label="record">
+            </div>
+            <div class="col-auto">
+                <label class="col-form-label col-form-label-sm  ">{{iProjectVariables.sortByText}}</label>
+
+            </div>
+            <div class="col-auto">
+                <select class="form-select border-0 rounded-0 py-3" id="inlineFormSelectPref">
+                    <option selected>Choose...</option>
+                    <option value="1">Sort One</option>
+                    <option value="2">Sort Two</option>
+                    <option value="3">Sort Three</option>
+                </select>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>

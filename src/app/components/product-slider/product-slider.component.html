@@ -1,0 +1,20 @@
+<!-- <swiper-container class="mySwiper" pagination="true" navigation="true" pagination-clickable="true" space-between="50" 
+    slides-per-view="2.1">-->
+<swiper-container class="mySwiper" [pagination]="pagination" [navigation]="navigation" [spaceBetween]="spaceBetween"
+    [slidesPerView]="slidesPerView" pagination-clickable="true">
+    <swiper-slide *ngFor="let item of productSlider">
+        <div class="room-img">
+            <img src="{{item.thumbnail}}" alt="{{item.title}}">
+            <div class="row slider-text g-0 h-100 align-items-end">
+                <div class="col-7 offset-1 slide-title text-dark p-3">
+                    <p class="fw-light">{{item.id}} &mdash; {{item.title}}</p>
+                    <p class="fw-bold font-1_4rem">{{item.subTitle}}</p>
+                </div>
+                <div class="col-auto slide-arrow"><a [href]=" item.url ? item.url : 'javasscipt:void(0)'"
+                        class="btn btn-primary rounded-0 btn-lg"><i class="bi bi-arrow-right"></i></a></div>
+            </div>
+        </div>
+    </swiper-slide>
+
+
+</swiper-container>

@@ -1,0 +1,16 @@
+<div class="align-items-center gx-3 gy-2 justify-content-lg-between row">
+    <div class="col-md-6 col-lg-auto" *ngFor="let item of featureData.featureRows">
+        <div class="row align-content-center align-items-center">
+            <div class="col-auto">
+                <img src="{{item.thumbnail}}" class="img-fluid rounded-start" alt="{{item.title}}">
+            </div>
+            <div class="col">
+                <div class="card-body  ">
+                    <h5 class="card-title  mb-0 fw-semibold">{{item.title}}</h5>
+                    <p class="card-text text-secondary mb-0">{{item.subTitle}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
